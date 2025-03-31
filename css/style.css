@@ -258,14 +258,14 @@ header {
 .cover-slick-item img {
     display: block;
     width: 100%;
-    aspect-ratio: 16 / 9; /* 16:9 の比率に統一 */
+    aspect-ratio: 16 / 16; /* 16:9 の比率に統一 */
     /*height: auto;*/
     /* opacity: 0.7; */
 }
 
 @media screen and (min-width: 768px) {
     .cover-slick-item img {
-    aspect-ratio: 16 / 16; /* 16:9 の比率に統一 */
+    aspect-ratio: 16 / 9; /* 16:9 の比率に統一 */
     /*height: auto;*/
     /* opacity: 0.7; */
 }
