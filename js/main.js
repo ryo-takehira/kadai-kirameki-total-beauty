@@ -16,19 +16,17 @@ $(window).on('resize', function () {
 
 
 
-
-
-
-
-
-
-
 // カルーセル
 $('.cover-slick').slick({
     arrows: false,
     autoplay: true,
     autoplaySpeed: 3000
 });
+
+
+
+
+
 
 
 $('.js-fadein-left').waypoint({
