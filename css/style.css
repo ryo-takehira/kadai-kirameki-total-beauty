@@ -1,0 +1,216 @@
+@charset "UTF-8";
+
+
+/* ベースのスタイル ------------------------------------------  */
+html {
+    font-size: 62.5%;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    html {
+        font-size: 1vw;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    html {
+        font-size: calc(10 / 375 * 100vw);
+    }
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-style: normal;
+    color: #000000;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.container {
+    margin: 0 auto;
+    max-width: 108rem;
+    padding: 0 1.6rem;
+    background: #fff;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 0 1.6rem;
+
+    }
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.no-pc {
+    display: inline;
+}
+
+@media screen and (min-width: 768px) {
+    .no-pc {
+        display: none;
+    }
+}
+
+
+/* フォントクラス */
+.serif {
+    font-family: "Noto Serif JP", serif;
+    font-style: normal;
+}
+
+/* ヘッダー */
+
+header {
+    position: fixed;
+    top: 0rem;
+    left: 0rem;
+    height: 6rem;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    z-index: 50;
+}
+
+@media (min-width: 768px) {
+    header {
+        height: 8.0rem;
+    }
+}
+
+.header-logo img {
+    width: 25.5rem;
+    height: 2.3rem;
+    display: flex;
+    align-items: center;
+    margin-left: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .header-logo img {
+        width: 20.8rem;
+        height: 1.8rem;
+        margin-left: 10.8rem;
+    }
+}
+
+.hamburger-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .hamburger-button {
+        display: none;
+    }
+}
+
+.hamburger-button i {
+    font-size: 3.2rem;
+    line-height: 1;
+    color: #606060;
+    font-style: normal;
+}
+
+
+/* ハンバーガーメニュー、ヘッダーナビ
+------------------------------------------ */
+.hamburger-menu {
+    display: none;
+    position: fixed;
+    top: 6.0rem;
+    left: 0rem;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 1.3rem 1.35rem 1.5rem;
+    text-align: left;
+    z-index: 100;
+}
+
+@media (min-width: 768px) {
+    .hamburger-menu {
+        position: static;
+        display: flex;
+        width: initial;
+        padding: 0;
+        margin: 0 0 0 auto;
+        height: 100%;
+    }
+}
+
+.hamburger-menu ul {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+    line-height: calc(26/15.8);
+    gap: 0rem;
+
+}
+
+@media (min-width: 768px) {
+    .hamburger-menu ul {
+        flex-direction: row;
+        align-items: center;
+        line-height: calc(26/15.8);
+        gap: 0.8rem;
+    }
+}
+
+.nav-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 9.6rem;
+    height: 3.2rem;
+    background-color: #fff;
+    border: solid 0.1rem #606060;
+}
+
+.nav-link-start {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .nav-link-start {
+        color: #ffffff;
+        background-color: #1989ff;
+        font-weight: 700;
+        width: 19.2rem;
+        height: 3.6rem;
+        border-radius: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0.8rem;
+    }
+
+    .nav-link-start:hover {
+        background-color: #0097a7;
+        color: #fefefe;
+    }
+}
