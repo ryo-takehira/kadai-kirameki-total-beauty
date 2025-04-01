@@ -375,7 +375,7 @@ header {
     top: 30rem;
     position: relative;
     width: 100%;
-
+    max-width:37.0rem;
     display: flex;
     justify-content: center;
     align-items: center;
