@@ -278,7 +278,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.3); /* 白の透明レイヤー (30%) */
+    background-color: rgba(255, 255, 255, 0.7); /* 白の透明レイヤー (30%) */
 z-index:10;
     pointer-events: none; /* クリックイベントを画像に通す */
 }
