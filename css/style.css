@@ -373,7 +373,7 @@ header {
 .cover ul {
     position: absolute;
     top: 30rem;
-    position: relative;
+    left:0;
     width: 100%;
     max-width:37.0rem;
     display: flex;
