@@ -19,11 +19,11 @@ $(window).on('resize', function () {
 // カルーセル
 $('.cover-slick').slick({
     arrows: false,
-    autoplay: true,
-    autoplaySpeed: 3000
+    adaptiveHeight: false,
 });
 
-
+let img = document.querySelector('img');
+console.log(img.naturalWidth, img.naturalHeight);
 
 
 

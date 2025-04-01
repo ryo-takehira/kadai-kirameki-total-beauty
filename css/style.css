@@ -252,82 +252,184 @@ header {
     background-size: cover;
     background-position: center;
     /* opacity: 0.3; */
+    background-size: contain;
+    /* 元の画像比率を保つ */
+    background-position: center top;
+    /* 上部基準で配置 */
 }
 
+
 .cover-slick-item img {
+    margin-top: 6.0rem;
     display: block;
     width: 100%;
-    aspect-ratio: 16 / 16; /* 16:9 の比率に統一 */
-    /*height: auto;*/
-    /* opacity: 0.7; */
+    height: 100%;
 }
 
 @media screen and (min-width: 768px) {
     .cover-slick-item img {
-    aspect-ratio: 16 / 9; /* 16:9 の比率に統一 */
-    /*height: auto;*/
-    /* opacity: 0.7; */
-}
+        margin-top: 0;
+    }
 }
 
-
-
-/* 白の透明レイヤー */
 .overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.7); /* 白の透明レイヤー (30%) */
-z-index:10;
-    pointer-events: none; /* クリックイベントを画像に通す */
+    background-color: rgba(255, 255, 255, 0.3);
+    z-index: 2;
+    pointer-events: none;
+    /* クリックイベントを画像に通す */
 }
 
 
 .cover-catch {
-    position: static;
-    padding: 4.15rem 3.0rem;
+    position: absolute;
+    top: 43.5rem;
+    width: 100%;
+    padding: 2.6rem 2.0rem 1.5rem;
     text-align: center;
     background: rgba(255, 255, 255);
 }
 
 @media screen and (min-width: 768px) {
     .cover-catch {
-        position: absolute;
-        padding: 3.3rem 6.0rem;
+        padding: 0rem 11.0rem;
         text-align: left;
-        bottom: 0;
-        background: rgba(255, 255, 255, 0.3);
+        top: 58.0rem;
+
+        background: rgba(255, 255, 255, 0);
         width: 100%;
     }
 }
 
 
 .cover-catch h2 {
-    font-size: 1.8rem;
-    font-weight: 500;
-    line-height: calc(27/18);
+    font-size: 2.8rem;
+    font-weight: 400;
+    line-height: 1.1;
     margin-bottom: 1.6rem;
 }
 
-.cover-catch p {
-    font-size: 2.4rem;
-    font-weight: 600;
-    line-height: calc(31/24);
-}
 
 @media screen and (min-width: 768px) {
     .cover-catch h2 {
         font-size: 3.6rem;
         line-height: calc(54/36);
-        font-weight: 400;
-        margin-bottom: 0;
+        margin-bottom: 1.0rem;
     }
+}
 
-    .cover-catch p {
-        font-size: 3.6rem;
-        font-weight: 400;
-        line-height: calc(54/36);
+.link-start {
+    position: absolute;
+    top: 57rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.link-start-button {
+    color: #fff;
+    background-color: #0097a7;
+    font-size: 1.8rem;
+    font-weight: 700;
+    width: 21.0rem;
+    height: 4.5rem;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+}
+
+@media (min-width: 768px) {
+    .link-start {
+        display: none;
+    }
+}
+
+.link-start-button p {
+    padding-bottom: 0.5rem;
+}
+
+.link-start-button i {
+    margin-left: 0.5rem;
+    padding-bottom: 0.1rem;
+}
+
+
+.link-start::after{
+    content: "";
+    height: 0.1rem;
+    width: 34.5rem;
+    background-color: #606060;
+    position: absolute;
+    top: 7.5rem;
+}
+
+
+.cover ul {
+    position: absolute;
+    top: 30rem;
+    position: relative;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.3rem;
+}
+
+@media (min-width: 768px) {
+    .cover ul {
+        gap: 13.7rem;
+    }
+}
+
+
+
+.cover-item-circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 15.6rem;
+    height: 15.6rem;
+    font-size: 2rem;
+    font-weight: 700;
+    border-radius: 50%;
+    border: #0097a7 solid 2px;
+    color: #0097a7;
+    margin: 0 auto 1.85rem;
+    line-height: 1.4;
+}
+
+@media (min-width: 768px) {
+    .cover-item-circle {
+        gap: 1.3rem;
+        margin: 0 auto 1.5rem;
+        line-height: 1;
+    }
+}
+
+.cover-item-circle b {
+    font-family: "Noto Sans JP";
+    font-size: 4.7rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.cover ul li p {
+    text-align: center;
+    font-size: 1.7rem;
+    line-height: calc(31/17);
+}
+
+@media (min-width: 768px) {
+    .cover ul li p {
+        font-size: 2.4rem;
+        line-height: calc(36/24);
     }
 }
