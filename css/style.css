@@ -234,6 +234,7 @@ header {
 @media screen and (min-width: 768px) {
     .cover {
         top: 0rem;
+        position: relative;
     }
 }
 
