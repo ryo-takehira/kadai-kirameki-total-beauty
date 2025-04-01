@@ -381,11 +381,13 @@ header {
     align-items: center;
     flex-wrap: wrap;
     gap: 3.3rem;
+    background-color:#fff;
 }
 
 @media (min-width: 768px) {
     .cover ul {
-        gap: 10rem;
+        top:60rem;
+        gap: 8rem;
     }
 }
 
