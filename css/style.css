@@ -385,7 +385,7 @@ header {
 
 @media (min-width: 768px) {
     .cover ul {
-        gap: 13.7rem;
+        gap: 10rem;
     }
 }
 
