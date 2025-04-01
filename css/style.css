@@ -374,8 +374,8 @@ header {
     position: absolute;
     top:60rem;
     left:0;
-    width: 37.5rem;
-    max-width:37.0rem;
+    width: 100%;
+    max-width:100%;
     display: flex;
     justify-content: center;
     align-items: center;
