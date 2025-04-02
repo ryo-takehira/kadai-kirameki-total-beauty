@@ -621,3 +621,8 @@ header {
     position: absolute;
     top: 7.5rem;
 }
+
+.contact .link-start-button::after {
+    display: none;
+    content: none;
+}
