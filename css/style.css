@@ -334,6 +334,7 @@ header {
 }
 
 .cover .link-start-button {
+    position: relative;
     color: #fff;
     background-color: #0097a7;
     font-size: 1.8rem;
@@ -363,7 +364,7 @@ header {
 }
 
 
-.cover .link-start::after {
+.cover .link-start-button::after {
     content: "";
     height: 0.1rem;
     width: 34.5rem;
