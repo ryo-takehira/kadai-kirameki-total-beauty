@@ -388,7 +388,7 @@ header {
 
 @media (min-width: 768px) {
     .cover ul {
-        top:50rem;
+        top:65rem;
         gap: 8rem;
         padding-top:5.0rem;
     }
