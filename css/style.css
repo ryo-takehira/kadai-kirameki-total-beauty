@@ -301,7 +301,7 @@ header {
     .cover-catch {
         padding: 0rem 11.0rem;
         text-align: left;
-        top: 58.0rem;
+        /*top: 58.0rem;*/
         bottom: 0;
         background: rgba(255, 255, 255, 0);
         width: 100%;
