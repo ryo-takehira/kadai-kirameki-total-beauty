@@ -229,12 +229,14 @@ header {
 
 .cover {
     top: 6.0rem;
+    margin-bottom: 78.5rem;
 }
 
 @media screen and (min-width: 768px) {
     .cover {
         top: 0rem;
         position: relative;
+        margin-bottom: 25.5rem;
     }
 }
 
@@ -323,7 +325,7 @@ header {
     }
 }
 
-.link-start {
+.cover .link-start {
     position: absolute;
     top: 57rem;
     width: 100%;
@@ -331,7 +333,7 @@ header {
     justify-content: center;
 }
 
-.link-start-button {
+.cover .link-start-button {
     color: #fff;
     background-color: #0097a7;
     font-size: 1.8rem;
@@ -346,22 +348,22 @@ header {
 }
 
 @media (min-width: 768px) {
-    .link-start {
+    .cover .link-start {
         display: none;
     }
 }
 
-.link-start-button p {
+.cover .link-start-button p {
     padding-bottom: 0.5rem;
 }
 
-.link-start-button i {
+.cover .link-start-button i {
     margin-left: 0.5rem;
     padding-bottom: 0.1rem;
 }
 
 
-.link-start::after {
+.cover .link-start::after {
     content: "";
     height: 0.1rem;
     width: 34.5rem;
@@ -515,13 +517,106 @@ header {
         margin-left: 0.8rem;
     }
 }
+
 @media (min-width: 768px) {
     .cover ul li:nth-child(3) p {
         margin-left: 0rem;
     }
 }
+
 @media (min-width: 768px) {
     .cover ul li:nth-child(4) p {
         margin-right: 1.0rem;
     }
+}
+
+
+/* contact */
+
+.contact {
+    padding: 5.6rem 1.5rem 6.0rem;
+    background-color: #b5e9ee;
+}
+
+.contact h3 {
+    font-size: 3.4rem;
+    text-align: center;
+    color: #0097a7;
+    font-weight: 700;
+    line-height: calc(42/34);
+    margin: 0 auto 5.3rem;
+}
+
+.contact ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.0rem;
+    margin: 0 auto 5.1rem;
+    padding: 0 1.0rem 0 2.4rem;
+}
+
+.contact ul li {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.contact ul li i {
+    font-size: 1.8rem;
+    text-shadow: 0.2rem 0.2rem 0px rgba(32, 32, 32, 0.3);
+    margin-right: 2.0rem;
+}
+
+.contact ul li:nth-child(2) i {
+    padding-bottom: 0.4rem;
+}
+
+.contact ul li p {
+    padding-bottom: 1rem;
+    line-height: 1;
+    letter-spacing: 0.01em;
+}
+
+
+
+.contact .link-start {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact .link-start-button {
+    color: #fff;
+    background-color: #0097a7;
+    font-size: 2.0rem;
+    font-weight: 700;
+    width: 34.0rem;
+    height: 4.6rem;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+}
+
+
+.contact .link-start-button p {
+    padding-bottom: 0.5rem;
+}
+
+.contact .link-start-button i {
+    margin-left: 1.0rem;
+    padding-bottom: 0.15rem;
+}
+
+
+.contact .link-start::after {
+    content: "";
+    height: 0.1rem;
+    width: 34.5rem;
+    background-color: #606060;
+    position: absolute;
+    top: 7.5rem;
 }
