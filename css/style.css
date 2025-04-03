@@ -698,14 +698,20 @@ header {
 
 /* feature */
 
-.feature{
+.feature {
     padding: 4.8rem 1.35rem 6.0rem;
     margin: 0 auto;
 }
 
+@media (min-width: 768px) {
+    .feature-list {
+        max-width: 95.0rem;
+        margin: 0 auto;
 
+    }
+}
 
-.feature h2{
+.feature h2 {
     font-size: 3.4rem;
     font-weight: 700;
     color: #0097a7;
@@ -714,7 +720,7 @@ header {
     padding-right: 0.4rem;
 }
 
-.feature-first h3{
+.feature-first h3 {
     font-size: 4.8rem;
     font-weight: 400;
     color: #606060;
@@ -724,7 +730,7 @@ header {
     letter-spacing: 0.04em;
 }
 
-.feature-first h4{
+.feature-first h4 {
     font-size: 3.2rem;
     font-weight: 400;
     color: #606060;
@@ -733,13 +739,13 @@ header {
     margin-bottom: 3.5rem;
 }
 
-.feature-first h4 span{
+.feature-first h4 span {
     display: inline-block;
     line-height: 1;
     background-color: #b5e9ee;
 }
 
-.first-contents-title{
+.first-contents-title {
     font-size: 1.8rem;
     color: #fff;
     background-color: #0097a7;
@@ -750,38 +756,43 @@ header {
     justify-content: center;
     align-items: center;
     padding-bottom: 1.2rem;
-    margin-bottom: 1.0rem;
+    margin: 0 auto 1.0rem;
 }
 
-.first-contents ul{
+.first-contents ul {
     font-size: 1.2rem;
     display: flex;
     flex-direction: column;
     gap: 1.0rem;
+    width: 100%;
+    margin: 0 auto;
 }
 
-.first-contents ul li{
+.first-contents ul li {
     height: 10.6rem;
     display: flex;
     gap: 1.0rem;
+    width: 100%;
+    margin: 0 auto;
 }
 
-.first-contents ul li .first-contents-list{
+
+.first-contents ul li .first-contents-list {
     text-align: center;
     background-color: #dddddd;
     height: 100%;
-    width: 10.0rem;
+    width: calc(((100 + 5)/348) * 100%);
     display: flex;
     align-items: center;
     justify-content: center;
     letter-spacing: 0.01em;
 }
 
-.first-contents ul li .first-contents-text{
+.first-contents ul li .first-contents-text {
     font-size: 1.2rem;
     background-color: #eeeeee;
     height: 100%;
-    width: 23.5rem;
+    width: calc(((235 + 5)/348) * 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -790,10 +801,10 @@ header {
     letter-spacing: 0.015em;
 }
 
-.first-contents ul li:nth-child(3) .first-contents-list{
+.first-contents ul li:nth-child(3) .first-contents-list {
     border-radius: 0 0 0 1.5rem;
 }
 
-.first-contents ul li:nth-child(3) .first-contents-text{
+.first-contents ul li:nth-child(3) .first-contents-text {
     border-radius: 0 0 1.5rem 0;
 }
