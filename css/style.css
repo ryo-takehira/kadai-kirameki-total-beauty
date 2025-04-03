@@ -253,11 +253,8 @@ header {
     height: auto;
     background-size: cover;
     background-position: center;
-    /* opacity: 0.3; */
     background-size: contain;
-    /* 元の画像比率を保つ */
     background-position: center top;
-    /* 上部基準で配置 */
 }
 
 
@@ -535,8 +532,14 @@ header {
 /* contact */
 
 .contact {
-    padding: 5.6rem 1.5rem 6.0rem;
+    padding: 5.6rem 0rem 6.0rem;
     background-color: #b5e9ee;
+}
+
+@media (min-width: 768px) {
+    .contact {
+        padding: 5.4rem 0rem 6.0rem;
+    }
 }
 
 .contact h3 {
@@ -545,7 +548,15 @@ header {
     color: #0097a7;
     font-weight: 700;
     line-height: calc(42/34);
-    margin: 0 auto 5.3rem;
+    margin: 0 auto 5.5rem;
+}
+
+@media (min-width: 768px) {
+    .contact h3 {
+        font-size: 4.8rem;
+        line-height: calc(42/34);
+        margin: 0 auto 5.3rem;
+    }
 }
 
 .contact ul {
@@ -553,21 +564,66 @@ header {
     flex-direction: column;
     justify-content: center;
     gap: 1.0rem;
-    margin: 0 auto 5.1rem;
-    padding: 0 1.0rem 0 2.4rem;
+    margin: 0 auto 4.9rem;
+
+}
+
+
+@media (min-width: 768px) {
+    .contact ul {
+        gap: 1.9rem;
+        margin: 0 auto 5.1rem;
+    }
 }
 
 .contact ul li {
     font-size: 1.8rem;
-    display: flex;
-    align-items: center;
     text-align: left;
+    display: flex;
+    margin: 0 auto;
+}
+
+.contact ul li:nth-child(1) {
+
+}
+
+.contact ul li:nth-child(2) {
+    padding-left: 1.6rem;
+}
+
+@media (min-width: 768px) {
+    .contact ul li {
+        font-size: 2.4rem;
+        padding-right: 4.3rem;
+    }
 }
 
 .contact ul li i {
     font-size: 1.8rem;
     text-shadow: 0.2rem 0.2rem 0px rgba(32, 32, 32, 0.3);
     margin-right: 2.0rem;
+    padding: 0.1rem 0 0 0;
+}
+
+
+
+@media (min-width: 768px) {
+    .contact ul li i {
+        font-size: 2.4rem;
+        margin-right: 2.0rem;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .contact ul li:nth-child(1) i {
+        padding-top: 0.2rem;
+    }
+
+    .contact ul li:nth-child(2) i {
+        padding-top: 0.1rem;
+        padding-left: 0.7rem;
+    }
 }
 
 .contact ul li:nth-child(2) i {
@@ -623,22 +679,3 @@ header {
     padding-left: 1.4rem;
     padding-bottom: 0.15rem;
 }
-
-
-.contact-link-start::after {
-    content: "";
-    height: 0.1rem;
-    width: 34.5rem;
-    background-color: #606060;
-    position: absolute;
-    top: 7.5rem;
-}
-
-.contact-link-start-button::after,
-.contact-link-start::after {
-    content: none !important;
-    display: none !important;
-}
-
-
-
