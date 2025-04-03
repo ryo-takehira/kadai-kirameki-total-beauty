@@ -582,13 +582,16 @@ header {
 
 
 
-.contact .link-start {
+.contact-link-start {
     width: 100%;
     display: flex;
     justify-content: center;
+    padding: 0 0.5rem 0 0;
 }
 
-.contact .link-start-button {
+
+
+.contact-link-start-button {
     color: #fff;
     background-color: #0097a7;
     font-size: 2.0rem;
@@ -600,20 +603,29 @@ header {
     justify-content: center;
     align-items: center;
     line-height: 1;
+    padding: 0 0.3rem 0 0;
+    box-shadow: 0.7rem 0.7rem 0 rgba(32, 32, 32, 0.3);
+}
+
+.contact-link-start-button:hover {
+    margin-top: 0.7rem;
+    margin-left: 1.2rem;
+    box-shadow: none;
+
 }
 
 
-.contact .link-start-button p {
+.contact-link-start-button p {
     padding-bottom: 0.5rem;
 }
 
-.contact .link-start-button i {
-    margin-left: 1.0rem;
+.contact-link-start-button i {
+    padding-left: 1.4rem;
     padding-bottom: 0.15rem;
 }
 
 
-.contact .link-start::after {
+.contact-link-start::after {
     content: "";
     height: 0.1rem;
     width: 34.5rem;
@@ -622,8 +634,11 @@ header {
     top: 7.5rem;
 }
 
-.contact .link-start-button::after,
-.contact .link-start::after {
+.contact-link-start-button::after,
+.contact-link-start::after {
     content: none !important;
     display: none !important;
 }
+
+
+
