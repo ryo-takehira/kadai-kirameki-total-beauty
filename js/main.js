@@ -29,23 +29,18 @@ console.log(img.naturalWidth, img.naturalHeight);
 
 
 
-$('.js-fadein-left').waypoint({
+$('.feature-image').waypoint({
     handler: function (direction) {
         if (direction === 'down') {
-            $(this.element)
-                .addClass('animate__fadeInLeft');
-        }
-    },
-    offset: '50%',
-});
+            // フェードインアップというクラスを付与してます
+            $(this.element).addClass('animate__fadeInUp');
 
-$('.js-fadein-right').waypoint({
-    handler: function (direction) {
-        if (direction === 'down') {
-            $(this.element)
-                .addClass('animate__fadeInRight');
+            // アニメーションが１回しか呼ばれないようにするためにdestroyしてます
+            this.destroy();
         }
     },
+
+    // 画面中央に来たらhandlerを実行する設定です
     offset: '50%',
 });
 
