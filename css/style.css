@@ -891,6 +891,8 @@ header {
 
 
 
+/* .feature-second */
+
 .feature-second {
     margin: 0 auto 3.9rem;
 }
@@ -898,7 +900,7 @@ header {
 @media (min-width: 768px) {
     .feature-second {
         max-width: 95.0rem;
-        margin: 0 auto 6.1rem;
+        margin: 0 auto 3.8rem;
     }
 }
 
@@ -1059,15 +1061,15 @@ header {
 
 
 
-
-.feature-second {
-    margin: 0 auto 3.9rem;
+/* feature-third */
+.feature-third {
+    margin: 0 auto 10.0rem;
 }
 
 @media (min-width: 768px) {
-    .feature-second {
+    .feature-third {
         max-width: 95.0rem;
-        margin: 0 auto 6.1rem;
+        margin: 0 auto 10.1rem;
     }
 }
 
@@ -1076,9 +1078,26 @@ header {
     margin-bottom: 0.9rem;
 }
 
+@media (min-width: 768px) {
+    .feature-third h3{
+        padding-right: 0rem;
+        margin-bottom: 0.7rem;
+    }
+}
+
 .feature-third h4{
     padding-right: 0.9rem;
     margin-bottom: 3.6rem;
+}
+
+@media (min-width: 768px) {
+    .feature-third h4{
+        padding-right: 0.4rem;
+        margin-bottom: 3.6rem;
+    }
+    .feature-third h4 span{
+        padding-left: 0.3rem;
+    }
 }
 
 .feature-third ul{
@@ -1087,21 +1106,50 @@ header {
     gap: 2.5rem;
 }
 
+@media (min-width: 768px) {
+    .feature-third ul{
+        display: flex;
+        flex-direction: row;
+        gap: 2.5rem;
+    }
+}
+
 .feature-third .image-wrapper{
     margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .feature-third .image-wrapper{
+        margin-bottom: 1.4rem;
+    }
 }
 
 .feature-third .image-content{
     font-size: 1.2rem;
     line-height: calc(20/12);
-    padding: 0 2.0rem 0;
+}
+
+@media (min-width: 768px) {
+    .feature-third .image-content{
+        font-size: 1.6rem;
+        line-height: calc(20/12);
+    }
 }
 
 .feature-third ul li:nth-child(1) .image-content{
     padding: 0 2.0rem 0;
 }
 
-.feature-third ul li:nth-child(2) .image-content{
-    padding: 0 0.5rem 0 2.0rem;
+@media (min-width: 768px) {
+    .feature-third ul li:nth-child(1) .image-content{
+        padding: 0 2.8rem 0;
+    }
 }
 
+.feature-third ul li:nth-child(2) .image-content{
+    padding: 0 0.5rem 0 2.8rem;
+}
+
+.animate__animated{
+    opacity: 0;
+}
