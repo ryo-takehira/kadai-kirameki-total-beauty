@@ -935,7 +935,7 @@ header {
     .feature-second ul {
         flex-direction: row;
         gap: 9.0rem;
-        margin-bottom: 0.1rem;
+        margin-bottom: 1.9rem;
     }
 }
 
@@ -995,17 +995,17 @@ header {
 @media (min-width: 768px) {
     .feature-second .price p {
         font-size: 8.0rem;
-        padding-right: 6.7rem;
+        padding-right: 6.4rem;
     }
 }
 
 .feature-second ul li:nth-child(2) .price p {
-    padding: 0.1rem 0.9rem 0 0;
+    padding: 0.1rem 7.6rem 0 0;
 }
 
 @media (min-width: 768px) {
     .feature-second ul li:nth-child(2) .price p {
-        padding: 0;
+        padding: 0 6.7rem 0 0 ;
     }
 }
 
@@ -1021,8 +1021,8 @@ header {
 
 .feature-second ul li:nth-child(2) .price p span {
     position: absolute;
-    bottom: 0.4rem;
-    left: 34.9rem;
+    bottom: 2.4rem;
+    left: 26.7rem;
 }
 
 @media (min-width: 768px) {
@@ -1044,4 +1044,11 @@ header {
     font-weight: 400;
     padding-left: 0.4rem;
     text-align: center;
+}
+
+@media (min-width: 768px) {
+    .feature-second .attention {
+        font-size: 1.6rem;
+        padding-left: 0.4rem;
+    }
 }
