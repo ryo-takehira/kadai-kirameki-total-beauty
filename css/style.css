@@ -221,14 +221,12 @@ header {
 ------------------------------------------ */
 .cover {
     top: 6.0rem;
-    margin-bottom: 78.5rem;
 }
 
 @media screen and (min-width: 768px) {
     .cover {
         top: 0rem;
         position: relative;
-        margin-bottom: 25.5rem;
     }
 }
 
@@ -236,6 +234,13 @@ header {
     position: relative;
     width: 100%;
     height: auto;
+    margin-bottom: 2.6rem;
+}
+
+@media screen and (min-width: 768px) {
+    .cover-slick {
+        margin-bottom: 0rem;
+    }
 }
 
 .cover-slick-item {
@@ -266,26 +271,27 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: auto;
     background-color: rgba(255, 255, 255, 0.3);
     z-index: 2;
 }
 
 .cover-catch {
-    position: absolute;
-    top: 43.5rem;
     letter-spacing: 0.01em;
     width: 100%;
-    padding: 2.6rem 1.0rem 1.5rem;
+    padding: 0rem 1.0rem 0rem;
     text-align: center;
     background: rgba(255, 255, 255);
+    margin-bottom: 3.0rem;
 }
 
 @media screen and (min-width: 768px) {
     .cover-catch {
+        position: absolute;
+        bottom: 0rem;
+        transform: translateY(-321%);
         padding: 0rem 11.0rem;
         text-align: left;
-        top: 42.5vw;
         background: rgba(255, 255, 255, 0);
         width: 100%;
     }
@@ -307,8 +313,6 @@ header {
 }
 
 .cover .link-start {
-    position: absolute;
-    top: 57rem;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -354,9 +358,6 @@ header {
 }
 
 .cover ul {
-    position: absolute;
-    top: 70.5rem;
-    left: 0;
     width: 100%;
     max-width: 100%;
     display: flex;
@@ -366,13 +367,12 @@ header {
     gap: 2.2rem 3.3rem;
     background-color: #fff;
     z-index: 20;
+    padding-top: 9.0rem;
     padding-bottom: 5.2rem;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
     .cover ul {
-        top: 56.2vw;
-        margin: 0;
         gap: 4vw;
         padding-top: 6.1rem;
     }
@@ -381,8 +381,6 @@ header {
 
 @media (min-width: 1024px) {
     .cover ul {
-        top: 56.2vw;
-        margin: 0;
         gap: 8vw;
         padding-top: 6.1rem;
     }
@@ -523,13 +521,13 @@ header {
 /* contact
 ------------------------------------------ */
 .contact {
-    padding: 5.6rem 0rem 6.0rem;
+    padding: 5.4rem 0rem 6.0rem;
     background-color: #b5e9ee;
 }
 
 @media (min-width: 768px) {
     .contact {
-        padding: 5.4rem 0rem 6.0rem;
+        padding: 5.0rem 0rem 6.0rem;
     }
 }
 
@@ -555,14 +553,14 @@ header {
     flex-direction: column;
     justify-content: center;
     gap: 1.0rem;
-    margin: 0 auto 4.9rem;
+    margin: 0 auto 5.0rem;
 
 }
 
 @media (min-width: 768px) {
     .contact ul {
-        gap: 1.9rem;
-        margin: 0 auto 5.1rem;
+        gap: 1.8rem;
+        margin: 0 auto 5.2rem;
     }
 }
 
@@ -705,7 +703,7 @@ header {
     font-weight: 700;
     color: #0097a7;
     text-align: center;
-    margin-bottom: 3.4rem;
+    margin-bottom: 3.3rem;
     padding-right: 0.4rem;
 }
 
@@ -725,8 +723,14 @@ header {
 }
 
 .feature-first h3 {
-    margin-bottom: 0.7rem;
+    margin-bottom: 0.9rem;
     letter-spacing: 0.04em;
+}
+
+@media (min-width: 768px) {
+    .feature-first h3 {
+        margin-bottom: 0.7rem;
+    }
 }
 
 .feature h4 {
@@ -1369,8 +1373,8 @@ header {
 
 @media (min-width: 768px) {
     .contact-second ul {
-        gap: 2.0rem;
-        margin: 0 auto 5.0rem;
+        gap: 1.9rem;
+        margin: 0 auto 5.1rem;
     }
 }
 
@@ -1628,12 +1632,12 @@ header {
 
 /* footer
 ------------------------------------------ */
-footer.container{
+footer.container {
     padding: 4.0rem 0.5rem 3.5rem;
 }
 
 @media (min-width: 768px) {
-    footer.container{
+    footer.container {
         padding: 4.0rem 0.5rem 4.0rem;
     }
 }
