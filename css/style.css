@@ -640,21 +640,19 @@ header {
         width: 55.8rem;
         height: 7.8rem;
         padding: 0 0 0.2rem 0.5rem;
+        transition: transform 0.3s ease;
         box-shadow: 0.7rem 0.7rem 0 rgba(32, 32, 32, 0.3);
     }
 }
 
 .contact-link-start-button:hover {
-    margin-top: 0.7rem;
-    margin-left: 1.2rem;
+    transform: translate(1.2rem, 0.7rem);
     box-shadow: none;
 }
 
 @media (min-width: 768px) {
     .contact-link-start-button:hover {
-        margin-top: 0.7rem;
-        margin-left: 2.0rem;
-        box-shadow: none;
+        transform: translate(2.0rem, 0.7rem);
     }
 }
 
