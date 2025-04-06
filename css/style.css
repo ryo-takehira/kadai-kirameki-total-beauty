@@ -222,11 +222,13 @@ header {
 .cover {
     position: relative;
     top: 6.0rem;
+    margin-bottom:6.0rem;
 }
 
 @media screen and (min-width: 768px) {
     .cover {
         top: 0rem;
+        margin-bottom:0rem;
     }
 }
 
@@ -288,8 +290,7 @@ header {
 @media screen and (min-width: 768px) {
     .cover-catch {
         position: absolute;
-        bottom: 0rem;
-        transform: translateY(-321%);
+        bottom: 3.4rem;
         padding: 0rem 11.0rem;
         text-align: left;
         background: rgba(255, 255, 255, 0);
@@ -357,7 +358,8 @@ header {
     top: 7.5rem;
 }
 
-.cover ul {
+
+.point ul {
     width: 100%;
     max-width: 100%;
     display: flex;
@@ -372,7 +374,7 @@ header {
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-    .cover ul {
+    .point ul {
         gap: 4vw;
         padding-top: 6.1rem;
     }
@@ -380,7 +382,7 @@ header {
 
 
 @media (min-width: 1024px) {
-    .cover ul {
+    .point ul {
         gap: 8vw;
         padding-top: 6.1rem;
     }
@@ -389,30 +391,30 @@ header {
 
 /* cover-ul-li-position */
 @media (min-width: 768px) {
-    .cover ul li:nth-child(1) {
+    .point ul li:nth-child(1) {
         padding: 0 0.1rem 0 0.9rem;
     }
 }
 
 @media (min-width: 768px) {
-    .cover ul li:nth-child(2) {
+    .point ul li:nth-child(2) {
         padding: 0 0.9rem 0 1.2rem;
     }
 }
 
 @media (min-width: 768px) {
-    .cover ul li:nth-child(3) {
+    .point ul li:nth-child(3) {
         padding: 0 1.4rem 0 1.8rem;
     }
 }
 
 @media (min-width: 768px) {
-    .cover ul li:nth-child(4) {
+    .point ul li:nth-child(4) {
         padding: 0 1.0rem 0 1.0rem;
     }
 }
 
-.cover-item-circle {
+.point-item-circle {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -429,7 +431,7 @@ header {
 }
 
 @media (min-width: 768px) {
-    .cover-item-circle {
+    .point-item-circle {
         width: 16rem;
         height: 16rem;
         gap: 1.3rem;
@@ -441,30 +443,30 @@ header {
 
 /* cover-circle-position */
 @media (min-width: 768px) {
-    .cover ul li:nth-child(1) .cover-item-circle {
+    .point ul li:nth-child(1) .point-item-circle {
         margin-left: 0.5rem;
     }
 }
 
 @media (min-width: 768px) {
-    .cover ul li:nth-child(2) .cover-item-circle {
+    .point ul li:nth-child(2) .point-item-circle {
         margin-left: 0.25rem;
     }
 }
 
 @media (min-width: 768px) {
-    .cover ul li:nth-child(3) .cover-item-circle {
+    .point ul li:nth-child(3) .point-item-circle {
         margin-right: 0.5rem;
     }
 }
 
 @media (min-width: 768px) {
-    .cover ul li:nth-child(4) .cover-item-circle {
+    .point ul li:nth-child(4) .point-item-circle {
         margin-right: 0.3rem;
     }
 }
 
-.cover-item-circle b {
+.point-item-circle b {
     font-family: "Noto Sans JP";
     font-size: 4.8rem;
     font-weight: 400;
@@ -473,19 +475,19 @@ header {
 }
 
 @media (min-width: 768px) {
-    .cover-item-circle b {
+    .point-item-circle b {
         padding-bottom: 0.1rem;
     }
 }
 
-.cover ul li p {
+.point ul li p {
     text-align: center;
     font-size: 2.0rem;
     line-height: calc(35/20);
 }
 
 @media (min-width: 768px) {
-    .cover ul li p {
+    .point ul li p {
         font-size: 2.4rem;
         line-height: 1.8;
     }
@@ -494,25 +496,25 @@ header {
 
 /* cover-list-p-position */
 @media (min-width: 768px) {
-    .cover ul li:nth-child(1) p {
+    .point ul li:nth-child(1) p {
         margin-right: 0.5rem;
     }
 }
 
 @media (min-width: 768px) {
-    .cover ul li:nth-child(2) p {
+    .point ul li:nth-child(2) p {
         margin-left: 0.8rem;
     }
 }
 
 @media (min-width: 768px) {
-    .cover ul li:nth-child(3) p {
+    .point ul li:nth-child(3) p {
         margin-left: 0rem;
     }
 }
 
 @media (min-width: 768px) {
-    .cover ul li:nth-child(4) p {
+    .point ul li:nth-child(4) p {
         margin-right: 1.0rem;
     }
 }
@@ -521,7 +523,7 @@ header {
 /* contact
 ------------------------------------------ */
 .contact {
-    padding: 11.4rem 0rem 6.0rem;
+    padding: 5.4rem 0rem 6.0rem;
     background-color: #b5e9ee;
 }
 
