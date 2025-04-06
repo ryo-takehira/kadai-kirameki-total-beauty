@@ -1,1 +1,0 @@
-# kadai-kirameki-total-beauty

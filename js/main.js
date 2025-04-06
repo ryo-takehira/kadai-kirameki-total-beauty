@@ -15,6 +15,8 @@ $(window).on('resize', function () {
 $('.cover-slick').slick({
     arrows: false,
     adaptiveHeight: false,
+    autoplay: true,
+    autoplayspeed: 3000,
 });
 
 let img = document.querySelector('img');
