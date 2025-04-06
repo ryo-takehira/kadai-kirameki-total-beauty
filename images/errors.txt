@@ -1,5 +1,0 @@
-[2025/4/1 2:03:34] layer "cover_02_pc.jpg": Duplicate path: cover_02_pc.jpg
-[2025/4/1 2:03:57] layer "cover_03_pc.jpg": Duplicate path: cover_03_pc.jpg
-[2025/4/1 2:04:35] layer "cover_01_sp.jpg": Duplicate path: cover_01_sp.jpg
-[2025/4/1 2:04:50] layer "cover_02_sp.jpg": Duplicate path: cover_02_sp.jpg
-[2025/4/1 2:05:19] layer "cover_03_sp.jpg": Duplicate path: cover_03_sp.jpg
