@@ -34,7 +34,6 @@ $('.feature-image').waypoint({
 
 $('.click-open dt').on('click', function (e) {
     let $dl = $(this).closest('.click-open');
-    $dl.toggleClass('open'); // dl に open クラスを付与
-    $(this).next().slideToggle(); // 次の dd を開閉
-
+    $dl.toggleClass('open');
+    $(this).next().slideToggle();
 });
