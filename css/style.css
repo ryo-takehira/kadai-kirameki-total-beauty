@@ -1337,6 +1337,11 @@ header {
     justify-content: center;
     align-items: center;
     width: 3.65rem;
+    padding: 0 0 0.3rem 0;
+}
+
+.feature-four .td-circle{
+    padding:0.1rem 0.0rem 0.0rem 0.0rem;
 }
 
 @media (min-width: 768px) {
