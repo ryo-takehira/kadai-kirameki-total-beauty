@@ -1365,3 +1365,195 @@ header {
         margin: 0 auto 5.0rem;
     }
 }
+
+
+/* faq
+------------------------------------------ */
+.faq {
+    padding: 4.7rem 1.5rem 3.8rem;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .faq {
+        padding: 4.2rem 1.5rem 3.8rem;
+        margin: 0 auto;
+    }
+}
+
+.faq .faq-title h3 {
+    font-size: 3.4rem;
+    font-weight: 700;
+    letter-spacing: 0.035em;
+    text-align: center;
+    color: #0097a7;
+    margin: 0 auto 5.0rem;
+}
+
+@media (min-width: 768px) {
+    .faq .faq-title h3 {
+        font-size: 4.8rem;
+        letter-spacing: 0.05em;
+        padding: 0 0 0 0.6rem;
+        margin: 0 auto 5.9rem;
+    }
+}
+
+.faq dl {
+    position: relative;
+    width: 100%;
+    font-size: 1.6rem;
+    max-width: 95.0rem;
+    margin: 0 auto;
+    background-color: #606060;
+}
+
+@media (min-width: 768px) {
+    .faq dl {
+        font-size: 1.8rem;
+    }
+}
+
+
+
+.click-open dt {
+    color: #0097a7;
+    border-bottom: solid 0.2rem #0097a7;
+    line-height: 1.75;
+    background-color: #82caeb;
+    padding: 0rem 4.1rem 0.6rem 3.4rem;
+    height: 6.4rem;
+}
+
+
+.click-open dt::before {
+    content: "Q.";
+    font-family: "Noto Serif JP", serif;
+    font-style: normal;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #0097a7;
+    position: absolute;
+    top: -0.6rem;
+    left: 0;
+}
+
+@media (min-width: 768px) {
+    .click-open dt::before {
+        top: -0.6rem;
+        left: 0;
+    }
+}
+
+.click-open dt::after {
+    content: "＋";
+    color: #ffffff;
+    background-color: #0097a7;
+    font-size: 2.41rem;
+    font-weight: 400;
+    line-height: 2.0rem;
+    width: 3.6rem;
+    height: 3.6rem;
+    position: absolute;
+    right: 0rem;
+    top: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .click-open dt::after {
+        right: 0rem;
+        top: -0.3rem;
+    }
+}
+
+/* dl.open のときに dt::after の内容を変更 */
+.click-open.open dt::after {
+    content: "ー";
+}
+
+
+.click-open dd {
+    display: none;
+    position: relative;
+    line-height: 1.75;
+    padding: 1.1rem 0rem 0rem 3.3rem;
+    background-color: #c6eb82;
+}
+
+.click-open dd::before {
+    content: "A.";
+    font-family: "Noto Serif JP", serif;
+    font-style: normal;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #0097a7;
+    position: absolute;
+    top: 1.0rem;
+    left: 0;
+}
+
+.click-open:nth-of-type(1) dd::before {
+    top: 0.7rem;
+}
+
+.click-open:nth-of-type(1) {
+    margin-bottom: 0rem;
+}
+
+.click-open:nth-of-type(2) {
+    margin-bottom: 0rem;
+
+}
+
+.click-open:nth-of-type(3) {
+    margin-bottom: 0rem;
+}
+
+.click-open:nth-of-type(4) {
+    margin-bottom: 0rem;
+}
+
+
+.open:nth-of-type(1)  {
+    margin-bottom: 0.8rem;
+}
+
+.open:nth-of-type(2)  {
+    margin-bottom: 0.8rem;
+}
+
+.open:nth-of-type(3) .open {
+    margin-bottom: 0.8rem;
+}
+
+.open:nth-of-type(4) .open {
+    margin-bottom: 0.9rem;
+}
+
+.open:nth-of-type(5) .open {
+}
+
+
+
+.click-open:nth-of-type(1) dd {}
+
+.click-open:nth-of-type(2) dd {
+    letter-spacing: 0.013em;
+    padding-top: 1.5rem;
+}
+
+.click-open:nth-of-type(3) dd {
+    padding: 1.4rem 0 0 3.3rem;
+
+}
+
+.click-open:nth-of-type(4) dd {
+    padding: 1.4rem 0.4rem 0 3.3rem;
+}
+
+.click-open:nth-of-type(5) dd {
+    padding: 1.5rem 0 0 3.3rem;
+}
