@@ -32,16 +32,16 @@
 <body>
 
     <main>
-        <!-- ヘッダー -->
+        <!-- header -->
         <header class="header flex">
             <h1 class="header-logo">
                 <a href="#"><img src="images/logo_kirameki_total_beauty.png" alt="kirameki_total_beauty"></a>
             </h1>
-            <!-- ハンバーガーボタン -->
+            <!-- hamburger-button -->
             <button type="button" class="hamburger-button no-pc">
                 <i class="fas fa-solid fa-bars"></i>
             </button>
-            <!-- ナビゲーション、ヘッダーメニュー -->
+            <!-- hamburger-menu -->
             <nav class="hamburger-menu">
                 <ul class="flex">
                     <li class="nav-link"><a href="#point">施設概要</a></li>
@@ -54,12 +54,9 @@
             </nav>
         </header>
 
-
         <!-- cover -->
         <section class="cover">
-
             <div class="cover-slick">
-
                 <div class="cover-slick-item">
                     <picture>
                         <source srcset="images/cover_01_sp.jpg" media="(max-width: 767px)">
@@ -67,7 +64,6 @@
                     </picture>
                     <div class="overlay"></div>
                 </div>
-
                 <div class="cover-slick-item">
                     <picture>
                         <source srcset="images/cover_02_sp.jpg" media="(max-width: 767px)">
@@ -75,7 +71,6 @@
                     </picture>
                     <div class="overlay"></div>
                 </div>
-
                 <div class="cover-slick-item">
                     <picture>
                         <source srcset="images/cover_03_sp.jpg" media="(max-width: 767px)">
@@ -83,10 +78,9 @@
                     </picture>
                     <div class="overlay"></div>
                 </div>
-
             </div>
 
-
+            <!-- cover-catch -->
             <div class="cover-catch serif">
                 <h2>いつまでもキレイでいたい</h2>
                 <h2>全ての女性のために</h2>
@@ -146,11 +140,10 @@
 
         <!-- feature -->
         <section class="feature">
-
             <h2 class="serif">4つの特徴</h2>
-
             <div class="feature-list">
 
+                <!-- feature-first -->
                 <div class="feature-first">
                     <h3 class="serif">01.</h3>
                     <h4 class="serif"><span>美容専門医</span>による<br class="no-pc">カウンセリング</h4>
@@ -187,7 +180,7 @@
                     </div>
                 </div>
 
-
+                <!-- feature-second -->
                 <div class="feature-second">
                     <h3 class="serif">02.</h3>
                     <h4 class="serif">月々の施術費用は<br class="no-pc"><span>19,800円(税込)</span></h4>
@@ -212,7 +205,7 @@
                     <p class="attention">治療薬を処方させていただく場合は別途費用が発生いたします</p>
                 </div>
 
-
+                <!-- feature-third -->
                 <div class="feature-third">
                     <h3 class="serif">03.</h3>
                     <h4 class="serif"><span>施術は全室個室</span>で<br class="no-pc">プライベートを確保</h4>
@@ -238,7 +231,7 @@
                     </ul>
                 </div>
 
-
+                <!-- feature-four -->
                 <div class="feature-four">
                     <h3 class="serif">04.</h3>
                     <h4 class="serif">アクセス便利な<br class="no-pc"><span>東京駅から徒歩3分</span></h4>
@@ -254,43 +247,61 @@
 
                     <div class="table_width">
                         <table>
-                            <tr class="td-header">
-                                <th> </th>
-                                <th>月</th>
-                                <th>火</th>
-                                <th>水</th>
-                                <th>木</th>
-                                <th>金</th>
-                                <th>土</th>
-                                <th>日祝</th>
-                            </tr>
-                            <tr class="border-bottom">
-                                <td>午前</td>
-                                <td class="td-circle"><i class="fas fa-circle"></i></td>
-                                <td class="td-circle"><i class="fas fa-circle"></i></td>
-                                <td class="td-circle"><i class="fas fa-circle"></i></td>
-                                <td>休</td>
-                                <td class="td-circle"><i class="fas fa-circle"></i></td>
-                                <td class="td-circle"><i class="fas fa-circle"></i></td>
-                                <td class="td-circle"><i class="fas fa-circle"></i></td>
-                            </tr>
-                            <tr class="border-bottom">
-                                <td>午後</td>
-                                <td class="td-circle"><i class="fas fa-circle"></i></td>
-                                <td class="td-circle"><i class="fas fa-circle"></i></td>
-                                <td class="td-circle"><i class="fas fa-circle"></i></td>
-                                <td>休</td>
-                                <td class="td-circle"><i class="fas fa-circle"></i></td>
-                                <td class="td-circle"><i class="fas fa-circle"></i></td>
-                                <td class="td-circle"><i class="fas fa-circle"></i></td>
-                            </tr>
+                            <t-body>
+                                <tr class="td-header">
+                                    <th> </th>
+                                    <th>月</th>
+                                    <th>火</th>
+                                    <th>水</th>
+                                    <th>木</th>
+                                    <th>金</th>
+                                    <th>土</th>
+                                    <th>日祝</th>
+                                </tr>
+                                <tr class="border-bottom">
+                                    <td>午前</td>
+                                    <td class="td-circle td-circle1"><i class="fas fa-circle"></i></td>
+                                    <td class="td-circle  td-circle2"><i class="fas fa-circle"></i></td>
+                                    <td class="td-circle  td-circle3"><i class="fas fa-circle"></i></td>
+                                    <td>休</td>
+                                    <td class="td-circle  td-circle4"><i class="fas fa-circle"></i></td>
+                                    <td class="td-circle  td-circle5"><i class="fas fa-circle"></i></td>
+                                    <td class="td-circle  td-circle6"><i class="fas fa-circle"></i></td>
+                                </tr>
+                                <tr class="border-bottom">
+                                    <td>午後</td>
+                                    <td class="td-circle td-circle1"><i class="fas fa-circle"></i></td>
+                                    <td class="td-circle td-circle2"><i class="fas fa-circle"></i></td>
+                                    <td class="td-circle  td-circle3"><i class="fas fa-circle"></i></td>
+                                    <td>休</td>
+                                    <td class="td-circle  td-circle4"><i class="fas fa-circle"></i></td>
+                                    <td class="td-circle  td-circle5"><i class="fas fa-circle"></i></td>
+                                    <td class="td-circle  td-circle6"><i class="fas fa-circle"></i></td>
+                                </tr>
+                            </t-body>
                         </table>
                     </div>
                 </div>
             </div>
         </section>
 
-
+        <!-- contact-second -->
+        <section class="contact contact-second">
+            <h3 class="serif">美容に特化した<br class="no-pc">医師が監修したサロン</h3>
+            <ul>
+                <li><i class="far fa-square"></i>
+                    <p>無理な勧誘は一切ありません。</p>
+                </li>
+                <li><i class="far fa-square"></i>
+                    <p>必要な施術のみをご案内します。</p>
+                </li>
+            </ul>
+            <div class="contact-link-start">
+                <a class="contact-link-start-button" href="#">
+                    <p>無料カウンセリング</p><i class="fas fa-solid fa-chevron-right"></i>
+                </a>
+            </div>
+        </section>
 
     </main>
 
