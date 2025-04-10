@@ -678,7 +678,7 @@ header {
 /* feature
 ------------------------------------------ */
 .feature {
-    padding: 5.0rem 1.4rem 6.0rem;
+    padding: 5.0rem 1.4rem 6.1rem;
     margin: 0 auto;
 }
 
@@ -1213,7 +1213,7 @@ header {
 
 .feature-four .access-content {
     font-size: 1.2rem;
-    margin: 0 auto 2.0rem;
+    margin: 0 auto 1.9rem;
     text-align: center;
     padding-left: 0.9rem;
     line-height: 1.75;
@@ -1390,7 +1390,7 @@ header {
 
 @media (min-width: 768px) {
     .faq {
-        padding: 4.2rem 1.5rem 5.2rem;
+        padding: 4.2rem 1.5rem 5.1rem;
         margin: 0 auto;
     }
 }
@@ -1437,7 +1437,7 @@ header {
 
 @media (min-width: 768px) {
     .click-open dt {
-        padding: 0rem 4.1rem 0.6rem 3.4rem;
+        padding: 0rem 4.1rem 0.6rem 3.6rem;
         height: 4.5rem;
     }
 }
@@ -1495,7 +1495,7 @@ header {
     display: none;
     position: relative;
     line-height: 1.75;
-    padding: 1.1rem 0rem 0rem 3.3rem;
+    padding: 1.1rem 0rem 0rem 3.4rem;
 }
 
 .click-open dd::before {
